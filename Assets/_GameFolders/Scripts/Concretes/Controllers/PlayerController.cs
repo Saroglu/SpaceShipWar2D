@@ -26,7 +26,8 @@ namespace SpaceShipWar2D.Controllers
             //inputReader = new OldInputReader(); 
             InputReader = new NewInputReader();
             //_rigidBody = GetComponent<Rigidbody2D>();
-            _mover = new PlayerTransformMovement(this);
+
+            _mover = new PlayerTranslateFuncMovement(this);
         }
         //private void Update()
         //{
