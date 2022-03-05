@@ -1,6 +1,4 @@
 using SpaceShipWar2D.Abstracts.Movements;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -25,7 +23,7 @@ namespace SpaceShipWar2D.Controllers.Movements
         public void FixedTick()
         {
             //yurutme
-            _playerController.transform.position += (Vector3)_direction * Time.deltaTime;
+            _playerController.transform.position += (Vector3)_direction * Time.deltaTime * _playerController.Stats.MoveSpeed;
         }
     }
 
