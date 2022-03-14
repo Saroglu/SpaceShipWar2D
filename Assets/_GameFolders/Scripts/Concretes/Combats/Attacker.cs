@@ -1,9 +1,6 @@
 using SpaceShipWar2D.Abstracts.Combats;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-namespace SpaceShipWar2D.Animations
+namespace SpaceShipWar2D.Combats
 {
     public class Attacker : IAttacker
     {
